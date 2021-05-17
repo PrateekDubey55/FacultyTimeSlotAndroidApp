@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLoggedIn">
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/adminbackloggedin"
+        android:src="@drawable/ic_back"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"/>
+
+    <ProgressBar
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/adminloggedinprogress"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="50dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/welcomeadmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:textColor="@color/navyblue"
+        android:textSize="25sp"
+        android:text="Welcome Admin!"
+        android:layout_marginTop="70dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:fontFamily="monospace"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:id="@+id/adminlogout"/>
+
+    <ScrollView
+        android:layout_below="@+id/welcomeadmin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:elevation="25dp"
+                    app:cardCornerRadius="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradientcolor3">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="30dp"
+                        android:layout_centerHorizontal="true">
+                        <ImageButton
+                            android:id="@+id/newfaculty"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_personadd"
+                            android:background="@android:color/transparent"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add New Faculty"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="monospace"
+                        android:textColor="@color/navyblue"
+                        android:textSize="20dp"
+                        android:layout_marginTop="90dp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:elevation="25dp"
+                app:cardCornerRadius="25dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradientcolor3">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_centerHorizontal="true">
+                    <ImageButton
+                        android:id="@+id/newstudent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_personadd"
+                        android:background="@android:color/transparent"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add New Student"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/navyblue"
+                    android:textSize="20dp"
+                    android:layout_marginTop="90dp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:elevation="25dp"
+                app:cardCornerRadius="25dp"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradientcolor3">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_centerHorizontal="true">
+                    <ImageButton
+                        android:id="@+id/newadmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_personadd"
+                        android:background="@android:color/transparent"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add New Admin"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/navyblue"
+                    android:textSize="20dp"
+                    android:layout_marginTop="90dp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/deleteadmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:textColor="@color/navyblue"
+                android:textSize="20sp"
+                android:text="Delete Account?"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

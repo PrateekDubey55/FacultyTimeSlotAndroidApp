@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLogin"
+    android:background="@drawable/gradientcolor2">
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/adminback"
+        android:src="@drawable/ic_back"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/headingadmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Login"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:textColor="@color/navyblue"
+        android:textSize="30dp"
+        android:layout_marginTop="70dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/headingadmin">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_margin="50dp"
+            app:cardCornerRadius="25dp"
+            android:elevation="30dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:hint="Admin Username"
+                android:fontFamily="monospace"
+                android:id="@+id/adminemail"
+                android:textColor="@color/navyblue"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Password"
+                android:fontFamily="monospace"
+                android:id="@+id/adminpassword"
+                android:layout_below="@+id/adminemail"
+                android:layout_marginTop="5dp"
+                android:inputType="textPassword"
+                android:textColor="@color/navyblue"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/adminpassword"
+                    android:layout_marginLeft="20dp"
+                    android:text="Show Password"
+                    android:id="@+id/passwordcheckboxadmin"
+                    android:fontFamily="monospace"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/navyblue"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Login"
+                    android:id="@+id/loginbtnadmin"
+                    android:layout_below="@+id/passwordcheckboxadmin"
+                    android:layout_marginTop="15dp"/>
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/adminprogressbar"
+                    android:layout_below="@+id/loginbtnadmin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

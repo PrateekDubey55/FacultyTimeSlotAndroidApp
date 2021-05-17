@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Faculty Time Slot App</string>
+    <string name="faculty_time_slot_application">Faculty Time Slot Application</string>
+    <string name="faculty_login">Faculty Login</string>
+</resources>

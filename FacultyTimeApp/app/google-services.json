@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "772910221082",
+    "project_id": "facultytimeapp",
+    "storage_bucket": "facultytimeapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772910221082:android:642bed1c9b632ecaac0ea3",
+        "android_client_info": {
+          "package_name": "com.example.facultytimeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772910221082-b2qc9bfh5e6ipncl23bdlg8o3l9qd5t8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkVFyihFTcJsTwlH-8uiSJsftJJYPTw70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772910221082-b2qc9bfh5e6ipncl23bdlg8o3l9qd5t8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

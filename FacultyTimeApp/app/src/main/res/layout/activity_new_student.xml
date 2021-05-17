@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewStudent">
+
+    <ImageButton
+        android:layout_marginLeft="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/newstudentback"
+        android:src="@drawable/ic_back"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/headingnewstudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Student"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:textColor="@color/navyblue"
+        android:textSize="30dp"
+        android:layout_marginTop="70dp"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_info"
+        android:backgroundTint="@android:color/transparent"
+        android:id="@+id/infostudent"
+        android:layout_marginRight="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/headingnewstudent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_margin="50dp"
+            app:cardCornerRadius="25dp"
+            android:elevation="30dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="20dp"
+                    android:hint="Student Username"
+                    android:fontFamily="monospace"
+                    android:id="@+id/newstudentemail"
+                    android:textColor="@color/navyblue"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Password"
+                    android:fontFamily="monospace"
+                    android:id="@+id/newstudentpassword"
+                    android:layout_below="@+id/newstudentemail"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/navyblue"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/newstudentpassword"
+                    android:layout_marginLeft="20dp"
+                    android:text="Show Password"
+                    android:id="@+id/passwordcheckboxnewstudent"
+                    android:fontFamily="monospace"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/navyblue"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Confirm Password"
+                    android:fontFamily="monospace"
+                    android:id="@+id/newstudentpasswordconfirm"
+                    android:layout_below="@+id/passwordcheckboxnewstudent"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/navyblue"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/newstudentpasswordconfirm"
+                    android:layout_marginLeft="20dp"
+                    android:text="Show Password"
+                    android:id="@+id/passwordcheckboxnewstudentconfirm"
+                    android:fontFamily="monospace"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/navyblue"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Register"
+                    android:id="@+id/registerbtnstudent"
+                    android:layout_below="@+id/passwordcheckboxnewstudentconfirm"
+                    android:layout_marginTop="15dp"/>
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newstudentprogressbar"
+                    android:layout_below="@+id/registerbtnstudent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
